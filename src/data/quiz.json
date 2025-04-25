@@ -1,0 +1,102 @@
+{
+    "title": "B2B Quiz",
+    "description": "A comprehensive quiz to analyze your business's online presence and provide tailored recommendations",
+    "metadata": {
+      "version": "1.0",
+      "dataCollection": {
+        "businessName": "#business-name",
+        "city": "#city",
+        "source": "#source",
+        "geoip": "#geoip",
+        "userDevice": "#user-device"
+      }
+    },
+    "tableOfContents": {
+      "title": "Table of Contents",
+      "sections": [
+        "Basic Business Information & Motivation",
+        "Online Presence",
+        "Fast Food-Specific Questions (Conditional)",
+        "Time & Resource Management",
+        "Online Reputation",
+        "Local Businesses Near You",
+        "Performance & Future Plans",
+        "Success Stories with Paid Advertising",
+        "Receive Your Personalized Report",
+        "Methodology & References"
+      ],
+      "note": "Feel free to navigate at your own pace—no rush!"
+    },
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Basic Business Information & Motivation",
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Please enter your business name and the city where it's located.",
+            "placeholder": "e.g., \"Happy Pets Grooming, Denver\"",
+            "type": "text",
+            "required": true,
+            "variables": ["#business-name", "#city"],
+            "internal_note": "We'll use Business Name and City in your final report to provide local insights, such as community directories or localized promotions."
+          },
+          {
+            "id": "q2",
+            "question": "Which of the following best describes your business type or category?",
+            "type": "single_choice",
+            "required": true,
+            "variable": "#category",
+            "options": [
+              {
+                "value": "restaurant",
+                "label": "🍽 Restaurant/Café / Food Business",
+                "trigger": "show_section_2x"
+              },
+              {
+                "value": "retail",
+                "label": "🛍 Retail Store / Boutique"
+              },
+              {
+                "value": "professional",
+                "label": "👔 Professional Services (Consultant, Lawyer, Accountant, etc.)"
+              },
+              {
+                "value": "brick-mortar",
+                "label": "🏪 Brick-and-Mortar Shop (Local customers)"
+              },
+              {
+                "value": "ecommerce",
+                "label": "🛒 eCommerce (Selling products online)"
+              },
+              {
+                "value": "health",
+                "label": "⚕️ Health/Wellness / Fitness"
+              },
+              {
+                "value": "home-services",
+                "label": "🏠 Home Services (Cleaning, Contracting, Maintenance, etc.)"
+              },
+              {
+                "value": "creative",
+                "label": "✨ Creative/Freelance (Photography, Design, Art)"
+              },
+              {
+                "value": "events",
+                "label": "🎉 Events / Entertainment"
+              },
+              {
+                "value": "tech",
+                "label": "🚀 Startup or Tech-based"
+              },
+              {
+                "value": "other",
+                "label": "❓ Other (please specify)"
+              }
+            ],
+            "internal_note": "This Business Category helps shape industry-specific advice. For instance, a fast food place might need delivery service tips."
+          }
+        ]
+      }
+    ]
+} 
