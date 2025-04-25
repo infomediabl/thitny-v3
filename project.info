@@ -1,0 +1,29 @@
+Small business quiz is quiz which should be filled by small and micro business owners, to understand how they run 
+their social profiles, online reputation and advertising. 
+
+Questions are made to be quite simple, but answers on these questions should help to prepare report for their business.
+
+Quiz have also some "breakers" where we slowdown user a bit with some additional informations. 
+
+Internal explanation are provided but they are not planned to be displayed on page 
+
+Quiz boosters are tooltips, which helps users to finish quiz. 
+
+We do project in several phases. 
+Phase 1. 
+1.1 Prepare tech stack
+1.2 Check design and layout from our website app.thitny.com to use same design
+1.3 Prepare and install all required files 
+
+Phase 2. 
+Start making quiz based on questions provided in document @quiz.json.
+
+Phase 3
+Data collected from quiz should be saved in local storage, and then sent to webhook on this url
+https://hook.eu2.make.com/i4vyjf2onin6nln2ftrkkhws9shfbjcq
+
+Phase 4. 
+Final touch up, layout and small fixes
+
+Important 
+Use @rules.md file
